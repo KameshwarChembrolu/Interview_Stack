@@ -1,0 +1,106 @@
+Apple, Motorola, Qualcomm, OpenDrives, VMware, Marvell Semiconductor
+
+-----------------------------------------------------------------------------------
+C:
+-----------------------------------------------------------------------------------
+-> There are two threads. Both of them take a ceratin amount of time
+befire they enter a section of code, which needs to be synced
+between them. The threads need to sync at the start and the end of this
+section of this code.
+
+
+mutex_lock;
+
+
+int threading()
+{
+
+   section1{...};
+   lock;
+   section2{};
+   unlock;
+   section3{};
+
+}
+
+
+int main()
+{
+for(int = 0; i<= 1; i++)
+{
+   //spawning threads
+
+}
+//destroy
+}
+
+-> Write a function for str reversal?
+-> What is the difference between a struct and a union?
+-> What is segmentation faults?
+-> What is null pointer dereferencing? What is the default return type of a pointer?
+-> How will you dereference a null PTR?
+-> What does NULL indicate?
+-> What is multithreading? Give an example of multithreading?
+-> Static & const in C & give example  
+-> Difference between inline function and Macro.
+-> What is a pointer?
+-> What is heap memory allocation and stack memory allocation?
+-> When do you get segmentation fault? Different sceanrios when you will land up?
+-> Four scenarios that cause a deadlock.
+ Answer: a. The four necessary conditions for a deadlock are :-
+(1) mutual exclusion;
+ (2) hold-and-wait; 
+ (3) no preemption; and 
+ (4) circular wait.
+-> what is friend function?
+-> What are the storage classes in C ?
+
+-------------------------------------------------------------------------------
+OS:
+-------------------------------------------------------------------------------
+-> Virtual memory is made a reality due to memory management schemes such as segmentation and paging. When virtual memory is enabled on a n - bit system, 
+will the OS create an impression for the running process that it has a virtual address space (of size 2^n) all for itself (the program)? 
+
+On real time systems where the response time should be quick enough, we cant afford to use virtual memory as it will involve paging (due to unpredictable and 
+unintended waits) might slow the things down. This might especially happen when there is something that must be read from the secondary storage to the primary storage. 
+Also many real time systems dont have the capability of supporting the hardware (MMU) that is needed for making VM a reality. They instead use overlays which offers better
+speeds than paging. The main intention of overlays is to reduce the pressure on the RAM that is put by the program running on top. 
+Is virtual memory or can it be used in embedded real time systems?
+
+
+-> What is the difference between a spinlock and a mutex? Why is spinlock advantageous in a multiprocessor environment?
+
+-> What is priority inversion and how can we overcome it?
+Answer: Say , there is a pieced of shared code that a low and a high prio tasks 
+are sharing. This particular shared resource is protected bya semaphore_take() and 
+semaphore_give(). Say the low prio task has attained the semaphore and in the mean time if the high prio task wants to access it, it is blocked becuase it doesn't have the semaphore access. In between all of this, if the medium prio task which is running independently has a long computation, it is going to interrupt the low priority thread, simply because it has high prio when compared to low prio. This is stopping the low prio from releasing the semaphore. Thereby, high prio task is always blocked.
+
+-> ways to protect against prio inversion?
+Answer: it is avoided by priority inheritance	
+intlock() call will stop other services from interrupting current one. No more 
+context switches. we do int_unlock().This will renable the interrupts.
+
+
+-> What is virtual memory and what is the implementation of the pmap() and pgdir_walk() functions in the OS kernel?
+
+-> what is the producer consumer problem?
+
+-> In the case of reception of a packet, how is the driver and the OS handling this request and how are these incoming packet requests being handled by the hardware, device driver and the DMA?
+
+-> When we do malloc can we directly directly pass on these memory addresses to hardware? Or what are the OS functions that are used to translate these addresses?
+
+-> 
+
+------------------------------------------------------------------------------
+Firmware and Embedded
+------------------------------------------------------------------------------
+-> What is u-boot, busybox and qemu? 
+-> What are the trusted execution environments? Intel SGX and ARM TrustZone
+-> 
+
+
+-------------------------------------------------------------------------------
+Networking
+-------------------------------------------------------------------------------
+->What is carrier aggregation in LTE? And how have you used it in your NS-3 project?
+-> 
