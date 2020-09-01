@@ -1,0 +1,55 @@
+Qualcomm Interview experience:
+
+
+-> How would you share the variables between processes?
+How you take care of the synchronization that is to happen between the resources?
+
+-> What are the volatile and the static keywords? How do they work?
+
+-> In the following logic , as it is a pre increment operation on x in line 20, the pointer value is updated to 5.
+#include <stdio.h>
+
+int main()
+{
+
+int x = 4;
+int y = 0;
+int *ptr = &x;
+
+
+y = ++x + *ptr;
+
+printf("y:%d x:%d *ptr:%d", y,x,*ptr);
+
+}
+
+->#include <stdio.h>
+
+int main()
+{
+
+int x = 4;
+int y = 0;
+int *ptr = &x;
+
+if(x-=y) > 0)
+{
+
+    y = 1;
+}
+
+printf("y:%d x:%d", y, x);
+
+y = *ptr + x++;
+
+printf("y:%d x:%d *ptr:%d", y,x,*ptr);
+
+}
+
+
+-> Behaviour of variables across function calls. C program
+
+-> Write a program for getting the count of leading zeroes in a given integer?
+
+-> How will you dereference a void* pointer? What is default pointer type?
+

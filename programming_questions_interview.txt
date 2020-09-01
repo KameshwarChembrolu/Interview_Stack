@@ -25,4 +25,44 @@ give out the deterministic solution. It might give an efficient solution. So com
 -> Sum of the digits of a number
 
 ------------------------------------------------------------------------------------------------------------------------
+Output of the following code:
+
+#include <stdio.h>
+
+int main()
+{
+
+int x = 4;
+int y = 0;
+int *ptr = &x;
+
+
+y = ++x + *ptr;
+
+printf("y:%d x:%d *ptr:%d", y,x,*ptr);
+
+}
+
+->#include <stdio.h>
+
+int main()
+{
+
+int x = 4;
+int y = 0;
+int *ptr = &x;
+
+if(x-=y) > 0)
+{
+
+    y = 1;
+}
+
+printf("y:%d x:%d", y, x);
+
+y = *ptr + x++;
+
+printf("y:%d x:%d *ptr:%d", y,x,*ptr);
+
+}
 

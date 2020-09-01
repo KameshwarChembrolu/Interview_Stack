@@ -54,6 +54,9 @@ for(int = 0; i<= 1; i++)
  (4) circular wait.
 -> what is friend function?
 -> What are the storage classes in C ?
+-> Behaviour of variables across function calls. C program
+-> How will you dereference a void* pointer? What is default pointer type?
+
 
 -------------------------------------------------------------------------------
 OS:
@@ -88,6 +91,9 @@ context switches. we do int_unlock().This will renable the interrupts.
 -> In the case of reception of a packet, how is the driver and the OS handling this request and how are these incoming packet requests being handled by the hardware, device driver and the DMA?
 
 -> When we do malloc can we directly directly pass on these memory addresses to hardware? Or what are the OS functions that are used to translate these addresses?
+
+-> How would you share the variables between processes?
+How you take care of the synchronization that is to happen between the resources?
 
 -> 
 
