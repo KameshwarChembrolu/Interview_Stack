@@ -1,0 +1,68 @@
+
+String manipulation:
+
+-> String reversal without strrev, counting the length of the string without using strlen
+-> Code to find the most frequent character in a string.
+-> String concat and string compare function without using functions
+-> Return the index of the first unique character in a string.
+
+----------------------------------------------------------------------------------------------------------------------
+Data Structures:
+----------------------------------------------------------------------------------------------------------------------
+
+-> Linked List - how to traverse through the linked, 2. Linked List - how to delete a node in the linked List, 
+-> Given a 1024x768 square, how do know which pixels are black and which pixels are white.
+-> Write code to reverse a linked list.
+-> Implement a linked list and print out its elements which are taken as an input from the vector in C++.
+
+------------------------------------------------------------------------------------------------------------------------
+Bit Manipulation:
+------------------------------------------------------------------------------------------------------------------------
+-> Code to convert a liitle-endian int to big-endian  
+-> Code to find the leading and the trailing zeroes in a given integer?
+-> Count the number of set bits in a binary number. The brian kernighan way necessarily doesn't
+give out the deterministic solution. It might give an efficient solution. So come up with a more deterministic solution
+-> Sum of the digits of a number
+
+------------------------------------------------------------------------------------------------------------------------
+Output of the following code:
+
+#include <stdio.h>
+
+int main()
+{
+
+int x = 4;
+int y = 0;
+int *ptr = &x;
+
+
+y = ++x + *ptr;
+
+printf("y:%d x:%d *ptr:%d", y,x,*ptr);
+
+}
+
+->#include <stdio.h>
+
+int main()
+{
+
+int x = 4;
+int y = 0;
+int *ptr = &x;
+
+if(x-=y) > 0)
+{
+
+    y = 1;
+}
+
+printf("y:%d x:%d", y, x);
+
+y = *ptr + x++;
+
+printf("y:%d x:%d *ptr:%d", y,x,*ptr);
+
+}
+
